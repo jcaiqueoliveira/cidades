@@ -27,37 +27,46 @@ public class DetalheCidade extends AppCompatActivity {
         int cidadeClicada = this.getIntent().getIntExtra("PosicaoClicada", -1);
         int texto = 0;
         int imgCidade = 0;
+        String textoActionBar = null;
         switch (cidadeClicada){
             case ARACAJU:
+                textoActionBar = "ARACAJU";
                 texto = R.string.aracaju;
                 imgCidade = R.drawable.aracaju;
                 break;
             case CANINDE:
+                textoActionBar = "CANINDÉ";
                 texto = R.string.caninde;
                 imgCidade = R.drawable.caninde;
                 break;
             case ESTANCIA:
+                textoActionBar = "ESTÂNCIA";
                 texto = R.string.estancia;
                 imgCidade = R.drawable.estancia;
                 break;
             case ITABAIANA:
-                texto = R.string.itabaiana;
+                textoActionBar = "ITABAIANA";
+                                texto = R.string.itabaiana;
                 imgCidade = R.drawable.itabaiana;
                 break;
             case LARANJEIRAS:
+                textoActionBar = "LARANJEIRAS";
                 texto = R.string.laranjeiras;
                 imgCidade = R.drawable.laranjeiras;
                 break;
             case PROPRIA:
+                textoActionBar = "PROPRIÁ";
                 texto = R.string.propria;
                 imgCidade = R.drawable.propria;
                 break;
             case SAO_CRISTOVAO:
+                textoActionBar = "SÃO CRISTÓVÃO";
                 texto = R.string.saocristovao;
                 imgCidade = R.drawable.saocristovao;
                 break;
         }
         imageDetalheCidade.setImageResource(imgCidade);
         textDetalheCidade.setText(getResources().getString(texto));
+        getSupportActionBar().setTitle(getResources().getString(texto));
     }
 }

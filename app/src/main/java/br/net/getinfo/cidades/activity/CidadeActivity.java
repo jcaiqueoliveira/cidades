@@ -23,7 +23,7 @@ public class CidadeActivity extends AppCompatActivity {
         List<CidadeModel> listaCidades = new ArrayList<>();
         listaCidades.add(new CidadeModel("Aracaju", R.drawable.aracaju));
         listaCidades.add(new CidadeModel("Caninde", R.drawable.caninde));
-        listaCidades.add(new CidadeModel("Estancia", R.drawable.estancia));
+        listaCidades.add(new CidadeModel("Estância", R.drawable.estancia));
         listaCidades.add(new CidadeModel("Itabaiana", R.drawable.itabaiana));
         listaCidades.add(new CidadeModel("Laranjeiras", R.drawable.laranjeiras));
         listaCidades.add(new CidadeModel("Propriá", R.drawable.propria));
