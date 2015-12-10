@@ -55,6 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        //adicionando informaçoes para cada posição do recyclerview
         holder.mCardView.setTag(position);
         holder.mTextView.setText(cidade.get(position).getNomeCidade());
         holder.mImageView.setImageDrawable(ContextCompat.getDrawable(c,cidade.get(position).getImagemCidade()));

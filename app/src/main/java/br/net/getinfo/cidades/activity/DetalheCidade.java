@@ -67,6 +67,6 @@ public class DetalheCidade extends AppCompatActivity {
         }
         imageDetalheCidade.setImageResource(imgCidade);
         textDetalheCidade.setText(getResources().getString(texto));
-        getSupportActionBar().setTitle(getResources().getString(texto));
+        getSupportActionBar().setTitle(textoActionBar);
     }
 }
